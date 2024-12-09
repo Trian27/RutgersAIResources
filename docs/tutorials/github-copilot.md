@@ -1,10 +1,8 @@
 # Github Copilot Tutorial
 
 ## Navigation
-- [Home](./index.md)
-- [Tutorials](./tutorials.md)
-- [Resources](./resources.md)
-- [Contributing](./contributing.md)
+- [Home](../index.md)
+- [Contributing](../contributing.md)
 
 ## Overview
 This is a nontechnical tutorial of how to use Github Copilot
