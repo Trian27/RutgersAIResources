@@ -1,8 +1,8 @@
 # RutgersAIResources
 
 ## Navigation
-- [Home](../index.md)
-- [Contributing](../contributing.md)
+- [Home](./index.md)
+- [Contributing](./contributing.md)
 
 ## Overview
 This site aims to provide generative AI resources that students at Rutgers can use and basic tutorials
