@@ -1,0 +1,7 @@
+// On very wide screens, such as 27-inch 1440p monitors, scale the whole page up (the theme
+// already does this below 500px) so the content fills more of the screen without longer lines.
+@media (min-width: 150rem) {
+  html {
+    font-size: 1.25rem !important;
+  }
+}
