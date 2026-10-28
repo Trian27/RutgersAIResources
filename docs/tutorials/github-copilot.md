@@ -1,77 +1,95 @@
-# Github Copilot Tutorial
+---
+title: GitHub Copilot in VS Code
+parent: Tutorials
+nav_order: 1
+description: "Get free Copilot Student access and start using Copilot in Visual Studio Code."
+last_modified_date: 2026-10-28
+---
 
-## Navigation
-- [Home](../index.md)
-- [Contributing](../contributing.md)
+# GitHub Copilot in VS Code
+{: .no_toc }
 
-## Overview
-This is a nontechnical tutorial of how to use Github Copilot
+GitHub Copilot is an AI coding assistant. In VS Code it suggests code as you type, answers questions about your code in chat, and can make multi-file changes as an agent. Verified students get the Copilot Student plan for free.
+{: .fs-6 .fw-300 }
 
-## Installation
-If you don't have an github account, go to [github.com](https://github.com) and create an account. Then go to [education.github.com](https://education.github.com) and follow the signup steps. You will need a school verified email. Then go through the registration process and you are signed up for github copilot! This may take a bit to verify. For students this is absolutely free to use. You can use copilot within multiple forums, including Github, multiple IDE's, and Windows Terminal. It is however mostly used within an IDE. Check [here](https://docs.github.com/en/copilot/using-github-copilot/getting-code-suggestions-in-your-ide-with-github-copilot) for a list of IDE's Copilot works with and even how to start using them. But in general you can add it as an extension or plugin and then signin. You will have to make sure you have an up-to-date version of your IDE that supports the extension/plugin as well.
+1. TOC
+{:toc}
 
-### Basic Features
-1. **Code Completion**
-   - Inline suggestions as you type
-   - Tab to accept suggestions
-   - Use `Alt + ]` or `Alt + [` to cycle through suggestions
+---
 
-2. **Chat Panel**
-   - Access via `/` in code
-   - Or click Copilot icon in sidebar
-   - Ask questions about code
-   - Get explanations and examples
+{: .important }
+Check your course's AI policy before you use Copilot on graded work. Many programming courses restrict it. See [Using AI responsibly](../responsible-use.md).
 
-3. **Keyboard Shortcuts**
-   - `Ctrl + Enter`: Open Copilot completions panel
-   - `Esc`: Dismiss suggestion
-   - `Tab`: Accept suggestion
-   - `Cmd + I` (Mac): Inline chat
+## 1. Get Copilot Student
 
-## Some tips while using copilot
-This tutorial is mainly with the VSCode since that is the most popular IDE. On the bottom right of the IDE you should see the icon for copilot next to the bell as depicted in the image.
-<img src="../assets/images/copilotIcon.png" alt="" width="300"/> Click on this button. The three most important buttons are "Github Copilot Chat", "Open Completions Panel", and "Settings". 
+1. Create a free account at [github.com](https://github.com/signup) if you don't have one.
+2. Go to [GitHub Education benefits](https://github.com/settings/education/benefits) and apply as a student. Verify with your Rutgers email or proof of enrollment, such as a student ID, transcript, or class schedule. Approval can take a few days.
+3. Once you're approved, return to the same page. Under **Free GitHub developer resources for students and teachers**, click **Learn more**, choose **Copilot Student**, and follow the prompts.
 
-### Github Copilot Chat
-Use the chat feature to ask Copilot any questions about your code. Key features:
-- Attach files via paperclip icon
-- Select different AI models from dropdown
-- Access chat via keyboard shortcut `Cmd + I` (Mac)
+If only paid plans appear, don't buy anything. GitHub's advice is to wait a few days and try again, then contact GitHub Support if it still doesn't work ([GitHub docs](https://docs.github.com/en/copilot/how-tos/copilot-on-github/set-up-copilot/enable-copilot/set-up-for-students)). GitHub rechecks student eligibility every month.
 
-<img src="../assets/images/copilotChat.png" alt="" width="300"/>
+{: .note }
+While you wait, you can use **Copilot Free**, which anyone with a GitHub account gets automatically. It has a monthly limit on suggestions and chat ([plans](https://docs.github.com/en/copilot/get-started/plans)).
 
-#### Chat vs Edit Mode
-1. **Chat Mode**: Get explanations and suggestions
-2. **Edit Mode**: Direct code modifications
-   - Access via blue icon at top left
-   - Attach files to modify
-   - Review and accept/reject changes
+## 2. Set up VS Code
 
-<img src="../assets/images/copilotEditIcon.png" alt="" width="300"/>
+1. Install or update [Visual Studio Code](https://code.visualstudio.com/). Copilot is built into current versions, so you don't need to install an extension.
+2. Hover over the Copilot icon in the Status Bar at the bottom of the window and select **Use AI Features**.
+3. Sign in with your GitHub account. You can also run **GitHub Copilot: Sign in** from the Command Palette (⇧⌘P on Mac, Ctrl+Shift+P on Windows/Linux).
 
-### Open Completions Panel
-Access inline code suggestions:
-- Open with `Ctrl + Enter`
-- Navigate suggestions with `Alt + [` and `Alt + ]`
-- Accept with `Tab`
-- Dismiss with `Esc`
+If your account doesn't have Copilot Student or a paid plan yet, VS Code signs you up for Copilot Free ([setup guide](https://code.visualstudio.com/docs/setup/copilot)).
 
-### Settings
-Access settings via:
-1. Command Palette (`Cmd + Shift + P`)
-2. Type "Copilot Settings"
+## 3. Inline suggestions
 
-Key settings:
-- Enable/disable suggestions
-- Auto-trigger delay
-- Language support
-- Experimental features
+As you type, Copilot shows suggested code in gray text, called ghost text.
+
+- Press **Tab** to accept a suggestion or **Esc** to dismiss it.
+- To accept one word at a time, press **⌘→** on Mac or **Ctrl+→** on Windows/Linux.
+- **Next edit suggestions** predict the next change you're likely to make, even somewhere else in the file. An arrow appears in the gutter. Press **Tab** to jump to the edit, then **Tab** again to accept it.
+
+More detail: [Inline suggestions in VS Code](https://code.visualstudio.com/docs/editing/ai-powered-suggestions).
+
+## 4. Chat and agents
+
+Open the Chat view with **⌃⌘I** on Mac or **Ctrl+Alt+I** on Windows/Linux. Choose how Copilot should work from the agent picker in the chat box:
+
+| Agent | Use it to | Changes your files? |
+|:------|:----------|:--------------------|
+| **Ask** | Understand code, errors, or concepts | No |
+| **Plan** | Research a larger change and get a step-by-step plan first | No |
+| **Agent** | Build a feature, fix a bug, or create a project. It edits files and can run terminal commands. | Yes, and you review each change |
+
+Tips:
+
+- Type `#` in the chat box to attach a file, a folder, or other context, or drag a file into chat.
+- Slash commands: `/explain` explains selected code, `/fix` proposes a fix, `/tests` writes tests, and `/init` creates project instructions so Copilot follows your project's conventions.
+- For a quick change to the code you're looking at, use **inline chat**: select code and press **⌘I** on Mac or **Ctrl+I** on Windows/Linux. Choose **Keep** to accept the change or **Undo** to reject it.
+- On Copilot Student, the model is chosen automatically (**Auto**).
+
+{: .note }
+Older guides, including an earlier version of this page, describe a separate **Edit mode** and a completions panel. VS Code deprecated Edit mode in version 1.110 and is removing it. Use **Agent** for edits instead ([release notes](https://code.visualstudio.com/updates/v1_116)).
+
+## Keyboard shortcuts
+
+| Action | Mac | Windows/Linux |
+|:-------|:----|:--------------|
+| Open the Chat view | ⌃⌘I | Ctrl+Alt+I |
+| Start a new chat | ⌘N (in the Chat view) | Ctrl+N (in the Chat view) |
+| Inline chat in the editor or terminal | ⌘I | Ctrl+I |
+| Accept an inline suggestion | Tab | Tab |
+| Dismiss an inline suggestion | Esc | Esc |
+| Next / previous inline suggestion | ⌥] / ⌥[ | Alt+] / Alt+[ |
+| Trigger an inline suggestion | ⌥\ | Alt+\ |
+
+Sources: [VS Code AI cheat sheet](https://code.visualstudio.com/docs/agents/reference/ai-features-cheat-sheet) and [GitHub's Copilot shortcuts](https://docs.github.com/en/copilot/reference/keyboard-shortcuts).
 
 ## Troubleshooting
-- Check activation status in VSCode
-- Verify student access is active
-- Clear credentials if needed
-- Check [status page](https://status.github.com)
 
-## Conclusion
-That's it! You are now ready to use Github Copilot. The more you use it, the better it gets at predicting what you want. It is a very powerful tool that can save you a lot of time. It is also very useful for learning new technologies, as you can simply ask Copilot to explain things to you. If you have any questions, feel free to ask in the chat feature. Happy coding! Also feel free to reference the [documentation](https://docs.github.com/en/copilot).
+- **No Copilot icon in the Status Bar:** update VS Code to the latest version.
+- **Copilot Student isn't offered yet:** check your status on the [education benefits page](https://github.com/settings/education/benefits). Activation can take several days after approval.
+- **Copilot stopped responding:** check [GitHub Status](https://www.githubstatus.com/) for outages.
+
+## Learn more
+
+- [Copilot in VS Code quickstart](https://code.visualstudio.com/docs/agents/quickstart)
+- [GitHub Copilot documentation](https://docs.github.com/en/copilot)

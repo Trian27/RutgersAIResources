@@ -1,3 +1,47 @@
-title: My Documentation
-description: Project documentation powered by GitHub Pages
-theme: jekyll-theme-cayman
+title: Rutgers AI Resources
+description: >-
+  Student-maintained guide to the generative AI tools, student offers,
+  courses, and campus guidance available to Rutgers students.
+url: "https://trian27.github.io"
+baseurl: "/RutgersAIResources"
+
+# GitHub Pages builds this site from main:/docs with the github-pages gem.
+remote_theme: just-the-docs/just-the-docs@v0.12.0
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
+  - jekyll-seo-tag
+
+color_scheme: rutgers
+search_enabled: true
+heading_anchors: true
+back_to_top: true
+back_to_top_text: "Back to top"
+
+aux_links:
+  "Suggest a resource":
+    - "https://github.com/Trian27/RutgersAIResources/issues/new/choose"
+  "GitHub":
+    - "https://github.com/Trian27/RutgersAIResources"
+aux_links_new_tab: true
+
+last_edit_timestamp: true
+last_edit_time_format: "%B %-d, %Y"
+
+gh_edit_link: true
+gh_edit_link_text: "Edit this page on GitHub"
+gh_edit_repository: "https://github.com/Trian27/RutgersAIResources"
+gh_edit_branch: "main"
+gh_edit_source: docs
+gh_edit_view_mode: "tree"
+
+callouts:
+  note:
+    title: Note
+    color: blue
+  important:
+    title: Important
+    color: yellow
+  warning:
+    title: Warning
+    color: red
