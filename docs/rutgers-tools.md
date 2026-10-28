@@ -36,7 +36,7 @@ OIT lists these AI features in software Rutgers already provides. Who can use ea
 | Tool | AI features |
 |:-----|:------------|
 | [Grammarly for Education](https://it.rutgers.edu/grammarly/) | Grammar and style feedback, plus generative AI for brainstorming, outlining, and revising. Activate it through the OIT page. |
-| [Zoom AI Companion](https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0057623) | Meeting transcripts, summaries, and action items. |
+| [Zoom AI Companion](https://ithelp.rutgers.edu/sp?id=kb_article_view&sysparm_article=KB0019320) | Available to students in Rutgers-hosted meetings: meeting summaries, questions about what you missed, next steps, and smart recordings. Turn the features on under **Settings > Zoom AI** at [rutgers.zoom.us](https://rutgers.zoom.us/). Rutgers says not to use it in meetings about student records, health information, or confidential research. |
 | [Adobe Express](https://helpx.adobe.com/express/using/text-to-image.html) | Generates images from text prompts. |
 | [LinkedIn Learning](https://it.rutgers.edu/ai/building-ai-skills-with-linkedin-learning/) | AI career coaching, plus Rutgers-curated AI courses such as *Introduction to artificial intelligence* and the *Building AI literacy* learning path. Sign in through [software.rutgers.edu/lynda](https://software.rutgers.edu/lynda/). |
 
